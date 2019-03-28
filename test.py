@@ -14,6 +14,8 @@ def mesh_selector(n):
     if n == 1:
         return r"C:\Users\toshiba\Documents\Sim_Sciences_1_Semester\1_Sem_Materias\NMPDE\HW8\MESH.unstr.8"
     
+
+print('Oh my god, I am so gay!')
 x,y = [], [] 
 v1,v2,v3 = [], [], []
 Nt, N = [] , []
