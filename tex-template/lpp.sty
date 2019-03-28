@@ -1,0 +1,70 @@
+\usepackage[a4paper,left=2.0cm,right=2.0cm,top=2.0cm,bottom=3.0cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+
+
+\newcommand{\blindtext}{
+  Lorem ipsum dolor sit amet, consectetuer sadipscing elitr, sed diam
+  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+  erat, sed diam voluptua.  At vero eos et accusam et justo duo
+  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+  ut lre et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+  et accusam et justo duo dolores et ea rebum. Stet clita kasd
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+  erat, sed diam voluptua.  At vero eos et accusam et justo duo
+  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+  sanctus est Lorem ipsum dolor sit amet.
+}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{}
+\fancyhead[L]{\textbf{\leftmark}}
+\fancyfoot[C]{\bfseries \thepage}
+
+% Make nicer Table and Figure captions
+\setkomafont{captionlabel}{\sffamily\bfseries}
+\setkomafont{caption}{\sffamily}
+
+\def\mabstract#1{
+\begin{abstract}
+\textbf{\textsf{Abstract:}}
+#1
+\end{abstract}
+\thispagestyle{empty}
+%\par
+}
+
+\def\mtitle#1{
+\begin{center}
+{\huge \textbf{\textsf{#1}}}
+\end{center}
+\vspace{0.5em}
+%\par
+}
+
+\def\mauthor#1#2{
+\begin{center}
+{\large \textbf{\textsf{#1}}}
+\end{center}
+%\par
+}
+
+\def\maff#1#2#3{
+\begin{center}
+\small \textit{German Research School for Simulation Sciences GmbH} \\
+\small \textit{#1} \\[0.25em]
+\textit{#2 \hspace{2em} #3} 
+\end{center}
+\vspace{1.0em}
+%\par
+}
